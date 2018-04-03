@@ -49,6 +49,8 @@ class Kaltura_Client_Type_ClipAttributes extends Kaltura_Client_Type_OperationAt
 			$this->offset = (int)$xml->offset;
 		if(count($xml->duration))
 			$this->duration = (int)$xml->duration;
+		if(count($xml->globalOffsetInDestination))
+			$this->globalOffsetInDestination = (int)$xml->globalOffsetInDestination;
 	}
 	/**
 	 * Offset in milliseconds
@@ -63,6 +65,13 @@ class Kaltura_Client_Type_ClipAttributes extends Kaltura_Client_Type_OperationAt
 	 * @var int
 	 */
 	public $duration = null;
+
+	/**
+	 * global Offset In Destination in milliseconds
+	 *
+	 * @var int
+	 */
+	public $globalOffsetInDestination = null;
 
 
 }

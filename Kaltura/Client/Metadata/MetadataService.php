@@ -41,6 +41,7 @@ class Kaltura_Client_Metadata_MetadataService extends Kaltura_Client_ServiceBase
 
 	/**
 	 * @return Kaltura_Client_Metadata_Type_Metadata
+	 * @throws Kaltura_Client_Exception|Kaltura_Client_ClientException
 	 */
 	function add($metadataProfileId, $objectType, $objectId, $xmlData)
 	{
@@ -62,6 +63,7 @@ class Kaltura_Client_Metadata_MetadataService extends Kaltura_Client_ServiceBase
 
 	/**
 	 * @return Kaltura_Client_Metadata_Type_MetadataListResponse
+	 * @throws Kaltura_Client_Exception|Kaltura_Client_ClientException
 	 */
 	function listAction(Kaltura_Client_Metadata_Type_MetadataFilter $filter = null, Kaltura_Client_Type_FilterPager $pager = null)
 	{
@@ -83,6 +85,7 @@ class Kaltura_Client_Metadata_MetadataService extends Kaltura_Client_ServiceBase
 
 	/**
 	 * @return Kaltura_Client_Metadata_Type_Metadata
+	 * @throws Kaltura_Client_Exception|Kaltura_Client_ClientException
 	 */
 	function update($id, $xmlData = null, $version = null)
 	{

@@ -41,6 +41,7 @@ class Kaltura_Client_PlaylistService extends Kaltura_Client_ServiceBase
 
 	/**
 	 * @return array
+	 * @throws Kaltura_Client_Exception|Kaltura_Client_ClientException
 	 */
 	function execute($id, $detailed = "", Kaltura_Client_Type_Context $playlistContext = null, Kaltura_Client_Type_MediaEntryFilterForPlaylist $filter = null, Kaltura_Client_Type_FilterPager $pager = null)
 	{
@@ -68,6 +69,7 @@ class Kaltura_Client_PlaylistService extends Kaltura_Client_ServiceBase
 
 	/**
 	 * @return Kaltura_Client_Type_PlaylistListResponse
+	 * @throws Kaltura_Client_Exception|Kaltura_Client_ClientException
 	 */
 	function listAction(Kaltura_Client_Type_PlaylistFilter $filter = null, Kaltura_Client_Type_FilterPager $pager = null)
 	{

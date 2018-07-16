@@ -41,6 +41,7 @@ class Kaltura_Client_Metadata_MetadataProfileService extends Kaltura_Client_Serv
 
 	/**
 	 * @return Kaltura_Client_Metadata_Type_MetadataProfileListResponse
+	 * @throws Kaltura_Client_Exception|Kaltura_Client_ClientException
 	 */
 	function listAction(Kaltura_Client_Metadata_Type_MetadataProfileFilter $filter = null, Kaltura_Client_Type_FilterPager $pager = null)
 	{

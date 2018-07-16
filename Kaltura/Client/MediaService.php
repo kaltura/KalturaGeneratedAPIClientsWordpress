@@ -41,6 +41,7 @@ class Kaltura_Client_MediaService extends Kaltura_Client_ServiceBase
 
 	/**
 	 * @return Kaltura_Client_Type_MediaEntry
+	 * @throws Kaltura_Client_Exception|Kaltura_Client_ClientException
 	 */
 	function update($entryId, Kaltura_Client_Type_MediaEntry $mediaEntry)
 	{

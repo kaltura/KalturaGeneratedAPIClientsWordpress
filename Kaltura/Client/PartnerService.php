@@ -41,6 +41,7 @@ class Kaltura_Client_PartnerService extends Kaltura_Client_ServiceBase
 
 	/**
 	 * @return Kaltura_Client_Type_Partner
+	 * @throws Kaltura_Client_Exception|Kaltura_Client_ClientException
 	 */
 	function getSecrets($partnerId, $adminEmail, $cmsPassword)
 	{
@@ -61,6 +62,7 @@ class Kaltura_Client_PartnerService extends Kaltura_Client_ServiceBase
 
 	/**
 	 * @return Kaltura_Client_Type_Partner
+	 * @throws Kaltura_Client_Exception|Kaltura_Client_ClientException
 	 */
 	function register(Kaltura_Client_Type_Partner $partner, $cmsPassword = "", $templatePartnerId = null, $silent = false)
 	{

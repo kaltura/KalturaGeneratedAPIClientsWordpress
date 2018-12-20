@@ -59,7 +59,7 @@ class Kaltura_Client_Client extends Kaltura_Client_ClientBase
 
 	/**
 	 * Playlist service lets you create,manage and play your playlists
-	 *  Playlists could be static (containing a fixed list of entries) or dynamic (baseed on a filter)
+	 *  Playlists could be static (containing a fixed list of entries) or dynamic (based on a filter)
 	 * @var Kaltura_Client_PlaylistService
 	 */
 	public $playlist = null;
@@ -92,8 +92,8 @@ class Kaltura_Client_Client extends Kaltura_Client_ClientBase
 	{
 		parent::__construct($config);
 		
-		$this->setClientTag('php5:18-12-12');
-		$this->setApiVersion('14.10.0');
+		$this->setClientTag('php5:18-12-20');
+		$this->setApiVersion('14.11.0');
 		
 		$this->baseEntry = new Kaltura_Client_BaseEntryService($this);
 		$this->category = new Kaltura_Client_CategoryService($this);

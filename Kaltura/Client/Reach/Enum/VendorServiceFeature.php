@@ -37,5 +37,6 @@ class Kaltura_Client_Reach_Enum_VendorServiceFeature extends Kaltura_Client_Enum
 	const TRANSLATION = 2;
 	const ALIGNMENT = 3;
 	const AUDIO_DESCRIPTION = 4;
+	const CHAPTERING = 5;
 }
 

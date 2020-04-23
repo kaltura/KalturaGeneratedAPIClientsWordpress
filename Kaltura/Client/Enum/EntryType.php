@@ -34,7 +34,9 @@
 class Kaltura_Client_Enum_EntryType extends Kaltura_Client_EnumBase
 {
 	const AUTOMATIC = "-1";
+	const CONFERENCE_ENTRY_SERVER = "conference.CONFERENCE_ENTRY_SERVER";
 	const EXTERNAL_MEDIA = "externalMedia.externalMedia";
+	const SIP_ENTRY_SERVER = "sip.SIP_ENTRY_SERVER";
 	const MEDIA_CLIP = "1";
 	const MIX = "2";
 	const PLAYLIST = "5";

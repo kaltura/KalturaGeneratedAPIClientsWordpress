@@ -45,6 +45,8 @@ class Kaltura_Client_Type_StreamContainer extends Kaltura_Client_ObjectBase
 		if(is_null($xml))
 			return;
 		
+		if(count($xml->id))
+			$this->id = (string)$xml->id;
 		if(count($xml->type))
 			$this->type = (string)$xml->type;
 		if(count($xml->trackIndex))
@@ -58,6 +60,13 @@ class Kaltura_Client_Type_StreamContainer extends Kaltura_Client_ObjectBase
 		if(count($xml->channelLayout))
 			$this->channelLayout = (string)$xml->channelLayout;
 	}
+	/**
+	 * 
+	 *
+	 * @var string
+	 */
+	public $id = null;
+
 	/**
 	 * 
 	 *

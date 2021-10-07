@@ -31,51 +31,10 @@
  * @package Kaltura
  * @subpackage Client
  */
-class Kaltura_Client_Reach_Enum_CatalogItemLanguage extends Kaltura_Client_EnumBase
+class Kaltura_Client_Enum_TwoFactorAuthenticationMode extends Kaltura_Client_EnumBase
 {
-	const AR = "Arabic";
-	const YUE = "Cantonese";
-	const CA = "Catalan";
-	const ZH = "Chinese";
-	const DA = "Danish";
-	const NL = "Dutch";
-	const EN = "English";
-	const EN_US = "English (American)";
-	const EN_GB = "English (British)";
-	const FI = "Finnish";
-	const FR = "French";
-	const FR_CA = "French (Canada)";
-	const GD = "Gaelic (Scottish)";
-	const DE = "German";
-	const EL = "Greek";
-	const HE = "Hebrew";
-	const HI = "Hindi";
-	const HU = "Hungarian";
-	const IS = "Icelandic";
-	const IN = "Indonesian";
-	const GA = "Irish";
-	const IT = "Italian";
-	const JA = "Japanese";
-	const KO = "Korean";
-	const ML = "Malayalam";
-	const CMN = "Mandarin Chinese";
-	const NO = "Norwegian";
-	const PL = "Polish";
-	const PT = "Portuguese";
-	const PT_BR = "Portuguese (Brazil)";
-	const RO = "Romanian";
-	const RU = "Russian";
-	const ES = "Spanish";
-	const ES_XL = "Spanish (Latin America)";
-	const SV = "Swedish";
-	const ZH_TW = "Taiwanese Mandarin";
-	const TA = "Tamil";
-	const TH = "Thai";
-	const TR = "Turkish";
-	const UK = "Ukrainian";
-	const UR = "Urdu";
-	const VI = "Vietnamese";
-	const CY = "Welsh";
-	const ZU = "Zulu";
+	const ALL = 0;
+	const ADMIN_USERS_ONLY = 1;
+	const NON_ADMIN_USERS_ONLY = 2;
 }
 

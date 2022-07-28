@@ -40,5 +40,6 @@ class Kaltura_Client_Reach_Enum_VendorServiceFeature extends Kaltura_Client_Enum
 	const CHAPTERING = 5;
 	const INTELLIGENT_TAGGING = 6;
 	const DUBBING = 7;
+	const LIVE_CAPTION = 8;
 }
 

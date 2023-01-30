@@ -31,11 +31,11 @@
  * @package Kaltura
  * @subpackage Client
  */
-class Kaltura_Client_Type_UrlResource extends Kaltura_Client_Type_ContentResource
+class Kaltura_Client_Type_String extends Kaltura_Client_ObjectBase
 {
 	public function getKalturaObjectType()
 	{
-		return 'KalturaUrlResource';
+		return 'KalturaString';
 	}
 	
 	public function __construct(SimpleXMLElement $xml = null)
@@ -45,43 +45,15 @@ class Kaltura_Client_Type_UrlResource extends Kaltura_Client_Type_ContentResourc
 		if(is_null($xml))
 			return;
 		
-		if(count($xml->url))
-			$this->url = (string)$xml->url;
-		if(count($xml->forceAsyncDownload))
-		{
-			if(!empty($xml->forceAsyncDownload) && ((int) $xml->forceAsyncDownload === 1 || strtolower((string)$xml->forceAsyncDownload) === 'true'))
-				$this->forceAsyncDownload = true;
-			else
-				$this->forceAsyncDownload = false;
-		}
-		if(count($xml->urlHeaders))
-		{
-			if(empty($xml->urlHeaders))
-				$this->urlHeaders = array();
-			else
-				$this->urlHeaders = Kaltura_Client_ParseUtils::unmarshalArray($xml->urlHeaders, "KalturaString");
-		}
+		if(count($xml->value))
+			$this->value = (string)$xml->value;
 	}
-	/**
-	 * Remote URL, FTP, HTTP or HTTPS
-	 *
-	 * @var string
-	 */
-	public $url = null;
-
-	/**
-	 * Force Import Job
-	 *
-	 * @var bool
-	 */
-	public $forceAsyncDownload = null;
-
 	/**
 	 * 
 	 *
-	 * @var array of KalturaString
+	 * @var string
 	 */
-	public $urlHeaders;
+	public $value = null;
 
 
 }
